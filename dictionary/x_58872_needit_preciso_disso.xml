@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Preciso disso" max_length="40" name="x_58872_needit_preciso_disso" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Quando necessário" mandatory="true" max_length="40" name="u_calendar_date_time_1" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="seu departamento" label="Tipo de solicitação" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recursos Humanos" sequence="0" value="recursos humanos"/>
+                <element inactive_on_update="false" label="Instalações" sequence="1" value="instalações"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Seu Departamento" sequence="3" value="seu departamento"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal 1" label="O que precisa" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recurso 1" sequence="0" value="recurso 1"/>
+                <element inactive_on_update="false" label="Recurso 2" sequence="1" value="recurso 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="2" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="3" value="legal 2"/>
+                <element inactive_on_update="false" label="Instalação 1" sequence="4" value="instalação 1"/>
+                <element inactive_on_update="false" label="Instalação 2" sequence="5" value="instalação 2"/>
+                <element inactive_on_update="false" label="Seu departamento 1" sequence="6" value="seu departamento 1"/>
+                <element inactive_on_update="false" label="Seu departamento 2" sequence="7" value="seu departamento 2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Solicitado por" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="MI" label="New String" mandatory="true" max_length="40" name="u_string_5" type="string"/>
+    </element>
+</database>
